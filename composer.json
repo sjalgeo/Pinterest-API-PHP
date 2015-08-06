@@ -7,6 +7,6 @@
         }
     ],
     "require": {
-        
+        "dirkgroenen/pinterest-api-php": "0.*"
     }
 }

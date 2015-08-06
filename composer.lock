@@ -1,0 +1,123 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "7d4c1eeb42a80a162960e3817445d963",
+    "packages": [
+        {
+            "name": "dirkgroenen/pinterest-api-php",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dirkgroenen/Pinterest-API-PHP.git",
+                "reference": "1e862b1bd906759e19c3d3ee3710ebf702dfaad2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dirkgroenen/Pinterest-API-PHP/zipball/1e862b1bd906759e19c3d3ee3710ebf702dfaad2",
+                "reference": "1e862b1bd906759e19c3d3ee3710ebf702dfaad2",
+                "shasum": ""
+            },
+            "require": {
+                "filp/whoops": "^1.1",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DirkGroenen\\Pinterest\\": "src/Pinterest"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Dirk Groenen",
+                    "email": "dirk@bitlabs.nl",
+                    "homepage": "http://dirkgroenen.nl",
+                    "role": "Creator/Developer"
+                }
+            ],
+            "description": "PHP Wrapper for the official Pinterest API",
+            "keywords": [
+                "api",
+                "pinterest",
+                "wrapper"
+            ],
+            "time": "2015-08-06 08:11:57"
+        },
+        {
+            "name": "filp/whoops",
+            "version": "1.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "72538eeb70bbfb11964412a3d098d109efd012f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/72538eeb70bbfb11964412a3d098d109efd012f7",
+                "reference": "72538eeb70bbfb11964412a3d098d109efd012f7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Whoops": "src/"
+                },
+                "classmap": [
+                    "src/deprecated"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Filipe Dobreira",
+                    "homepage": "https://github.com/filp",
+                    "role": "Developer"
+                }
+            ],
+            "description": "php error handling for cool kids",
+            "homepage": "https://github.com/filp/whoops",
+            "keywords": [
+                "error",
+                "exception",
+                "handling",
+                "library",
+                "silex-provider",
+                "whoops",
+                "zf2"
+            ],
+            "time": "2015-06-29 05:42:04"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
