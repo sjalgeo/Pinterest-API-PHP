@@ -1,0 +1,12 @@
+{
+    "name": "dirkgroenen/pinterest-api-php-example-project",
+    "authors": [
+        {
+            "name": "Dirk Groenen",
+            "email": "dirk@taketwo.nl"
+        }
+    ],
+    "require": {
+        
+    }
+}
