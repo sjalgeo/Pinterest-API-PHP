@@ -17,6 +17,6 @@ class Interest extends Model {
      * 
      * @var array
      */
-    protected $fillable = ["id", "name"];
+    protected $fillable = array("id", "name");
 
 }

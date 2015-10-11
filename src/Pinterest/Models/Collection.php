@@ -22,7 +22,7 @@ class Collection implements \JsonSerializable, \ArrayAccess, \IteratorAggregate{
      * 
      * @var array
      */
-    private $items = [];
+    private $items = array();
 
     /**
      * The model of each collection item
@@ -110,11 +110,11 @@ class Collection implements \JsonSerializable, \ArrayAccess, \IteratorAggregate{
      */
     private function buildCollectionModels(array $items)
     {
-        $modelcollection = [];
+        $modelcollection = array();
 
         foreach($items as $item){
             $class = new \ReflectionClass("\\DirkGroenen\\Pinterest\\Models\\" . $this->model);
-            $modelcollection[] = $class->newInstanceArgs( [$this->master, $item] );
+            $modelcollection[] = $class->newInstanceArgs( array($this->master, $item) );
         }
 
         return $modelcollection;
@@ -151,7 +151,7 @@ class Collection implements \JsonSerializable, \ArrayAccess, \IteratorAggregate{
      */
     public function toArray()
     {
-        $items = [];
+        $items = array();
         
         foreach($this->items as $item){
             $items[] = $item->toArray();

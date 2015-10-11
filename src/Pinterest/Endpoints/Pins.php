@@ -24,7 +24,7 @@ class Pins extends Endpoint {
      * @throws Exceptions/PinterestExceptions
      * @return Models\Pin
      */
-    public function get( $pin_id, array $data = [] )
+    public function get( $pin_id, array $data = array() )
     {
         $response = $this->request->get( sprintf("pins/%s", $pin_id), $data );
         return new Pin( $this->master, $response );
@@ -39,7 +39,7 @@ class Pins extends Endpoint {
      * @throws Exceptions/PinterestExceptions
      * @return Models\Collection
      */
-    public function fromBoard( $board_id, array $data = [] )
+    public function fromBoard( $board_id, array $data = array() )
     {
         $response = $this->request->get( sprintf("boards/%s/pins", $board_id), $data );
         return new Collection( $this->master, $response, "Pin" );

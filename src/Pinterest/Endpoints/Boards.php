@@ -24,7 +24,7 @@ class Boards extends Endpoint {
      * @throws Exceptions/PinterestExceptions
      * @return Models\Board
      */
-    public function get( $board_id, array $data = [] )
+    public function get( $board_id, array $data = array() )
     {
         $response = $this->request->get( sprintf("boards/%s", $board_id), $data );
         return new Board( $this->master, $response );

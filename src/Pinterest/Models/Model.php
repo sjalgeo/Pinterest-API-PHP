@@ -21,14 +21,14 @@ class Model implements \JsonSerializable {
      *
      * @var array
      */
-    protected $attributes = [];
+    protected $attributes = array();
 
     /**
      * The available object keys
      * 
      * @var array
      */
-    protected $fillable = [];
+    protected $fillable = array();
 
     /**
      * Instance of the master Pinterest class

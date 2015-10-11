@@ -24,7 +24,7 @@ class Following extends Endpoint {
      * @throws Exceptions/PinterestExceptions
      * @return Collection
      */
-    public function users( array $data = [] )
+    public function users( array $data = array() )
     {
         $response = $this->request->get( "me/following/users", $data );
         return new Collection( $this->master, $response, "User" );
@@ -38,7 +38,7 @@ class Following extends Endpoint {
      * @throws Exceptions/PinterestExceptions
      * @return Collection
      */
-    public function boards( array $data = [] )
+    public function boards( array $data = array() )
     {
         $response = $this->request->get( "me/following/boards", $data );
         return new Collection( $this->master, $response, "Board" );
@@ -52,7 +52,7 @@ class Following extends Endpoint {
      * @throws Exceptions/PinterestExceptions
      * @return Collection
      */
-    public function interests( array $data = [] )
+    public function interests( array $data = array() )
     {
         $response = $this->request->get( "me/following/interests", $data );
         return new Collection( $this->master, $response, "Interest" );

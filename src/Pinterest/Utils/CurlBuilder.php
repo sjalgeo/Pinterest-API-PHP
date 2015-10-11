@@ -62,7 +62,7 @@ class CurlBuilder {
      * @param  array   $options
      * @return $this
      */
-    public function setOptions( array $options = [] )
+    public function setOptions( array $options = array() )
     {
         curl_setopt_array($this->curl, $options);
 
